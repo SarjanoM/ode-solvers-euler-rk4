@@ -9,9 +9,7 @@ C program implementing Heun’s method and fourth-order Runge–Kutta (RK4) to n
 
 This program numerically solves the **logistic growth differential equation**
 
-[
-\frac{dv}{dt} = k,v\left(1 - \frac{v}{M}\right)
-]
+dv/dt = k·v(1 − v/M)
 
 using two methods:
 
