@@ -1,6 +1,5 @@
 # ode-solvers-euler-rk4
 C program implementing Heun’s method and fourth-order Runge–Kutta (RK4) to numerically solve the logistic growth differential equation and compare their stepwise results.
-Put this in the **README.md**. Keep it technical and minimal. This is enough for an academic reference.
 
 ---
 
@@ -21,6 +20,8 @@ using two methods:
 
 The code is written in **C** and compares the step-by-step numerical evolution of the population variable (v(t)) for a given step size.
 
+---
+
 ### Inputs
 
 The program takes the following user inputs:
@@ -36,6 +37,8 @@ Number of steps is computed as:
 n = \frac{\text{final time}}{h}
 ]
 
+---
+
 ### Heun’s Method
 
 * Predictor step using Euler’s method
@@ -43,11 +46,15 @@ n = \frac{\text{final time}}{h}
 * Iteration stops when two successive corrected values are equal (after rounding)
 * Values are rounded to match manual/analytical tabulation typically used in coursework
 
+---
+
 ### RK4 Method
 
 * Uses four slope evaluations (k_1, k_2, k_3, k_4) per step
 * Provides higher accuracy compared to Heun’s method for the same step size
 * Outputs intermediate slope values and the updated solution at each step
+
+---
 
 ### Output
 
@@ -55,12 +62,17 @@ n = \frac{\text{final time}}{h}
 * Side-by-side numerical progression for both methods
 * Demonstrates the effect of numerical method order on accuracy and stability
 
+---
+
 ### Purpose
 
 This code is intended for **academic demonstration** of numerical methods for solving first-order nonlinear differential equations and for **comparison between second-order and fourth-order Runge–Kutta methods**.
+
+---
 
 ### Notes
 
 * Rounding is intentionally applied in Heun’s method to ensure convergence visibility.
 * Smaller step sizes improve accuracy, especially for Euler/Heun methods.
 
+---
